@@ -26,7 +26,6 @@ def main():
     parsed_page = parse_page(page)
     tweets = get_tweets(parsed_page)
 
-
     last_tweets = []
     for tweet in tweets[:3]:
         last_tweets.append(tweet.find(attrs={'class': 'TweetTextSize'}).text)
