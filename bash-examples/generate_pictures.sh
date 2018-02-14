@@ -9,8 +9,9 @@ fi
 
 echo "Generating dummy pictures.."
 for i in {01..10}; do
-    touch "$DIR/IMG_$i.JPG";
+    dummy_pic="$DIR/IMG_$i.JPG";
+    touch "$dummy_pic";
     if [ "$?" -eq 0 ]; then
-        echo "... succesfully generated $DIR/IMG-$I.JPG";
+        echo "... succesfully generated $dummy_pic";
     fi
 done
