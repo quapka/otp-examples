@@ -1,7 +1,10 @@
 #!/bin/bash
 
-if [ ! -d "pictures" ]; then
-    mkdir "pictures";
+DIR="pictures"
+
+if [ ! -d "$DIR" ]; then
+    echo "Creating a directory: ./$DIR";
+    mkdir "$DIR";
 fi
 
-touch "pictures/IMG_00.JPG";
+touch "$DIR/IMG_00.JPG";
