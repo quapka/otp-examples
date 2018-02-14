@@ -1,6 +1,10 @@
 #!/bin/bash
 
-DIR="pictures"
+if [ $1 ]; then
+    DIR="$1";
+else
+    DIR="pictures";
+fi
 
 if [ ! -d "$DIR" ]; then
     echo "Creating a directory: ./$DIR";
