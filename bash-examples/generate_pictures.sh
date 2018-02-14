@@ -7,4 +7,6 @@ if [ ! -d "$DIR" ]; then
     mkdir "$DIR";
 fi
 
-touch "$DIR/IMG_00.JPG";
+for i in {01..10}; do
+    touch "$DIR/IMG_$i.JPG";
+done
